@@ -39,7 +39,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+# This function tests if the inverse of a matrix is already
+# available with the special matrix. If it is not, it will
+# compute the inverse of the matrix, store that value in 
+# the special matrix that will get cached and return the value
 cacheSolve <- function(x, ...) {
     # Acquire the inverse value from the Cache Matrix object
     inverse <- x$getInverse()
